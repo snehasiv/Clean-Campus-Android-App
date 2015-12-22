@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Add and mail complaint" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal" >
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/radio0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/upload"
+        android:layout_below="@+id/textView2"
+        android:checked="true"
+        android:text="Low"
+        android:textSize="15dp" />
+
+    <RadioButton
+        android:id="@+id/radio1"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radio0"
+        android:layout_alignBottom="@+id/radio0"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="Normal"
+        android:textSize="15dp" />
+
+    <RadioButton
+        android:id="@+id/radio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_toRightOf="@+id/radio1"
+        android:text="Severe"
+        android:textSize="15dp" />
+
+    <RadioButton
+        android:id="@+id/radio4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:checked="true"
+        android:text="BH-1"
+        android:textSize="15dp" />
+
+    <RadioButton
+        android:id="@+id/radio5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radio4"
+        android:layout_below="@+id/radio4"
+        android:text="BH-2"
+        android:textSize="15dp" />
+
+    <RadioButton
+        android:id="@+id/radio6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radio7"
+        android:layout_toLeftOf="@+id/radio2"
+        android:text="BH-3"
+        android:textSize="15dp" />
+
+    <RadioButton
+        android:id="@+id/radio7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radio5"
+        android:layout_alignBottom="@+id/radio5"
+        android:layout_alignLeft="@+id/radio6"
+        android:text="GH"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radio0"
+        android:layout_below="@+id/radio0"
+        android:layout_marginTop="17dp"
+        android:text="Choose Nearest Location" />
+
+    <RadioButton
+        android:id="@+id/radio8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radio7"
+        android:layout_alignLeft="@+id/radio2"
+        android:text="Canteen"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/upload"
+        android:layout_below="@+id/upload"
+        android:layout_marginTop="31dp"
+        android:text="Category :" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/radioGroup2"
+        android:layout_alignLeft="@+id/radioGroup2"
+        android:layout_alignRight="@+id/radio9"
+        android:layout_below="@+id/TextView01"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <RadioButton
+        android:id="@+id/radio9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radio10"
+        android:layout_alignLeft="@+id/radio8"
+        android:text="SAC"
+        android:textSize="15dp" />
+
+    <RadioButton
+        android:id="@+id/radio10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radio7"
+        android:layout_below="@+id/radio7"
+        android:text="Academic Block"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroup2"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_marginBottom="17dp"
+        android:text="Complaint Description:" />
+
+    <RadioButton
+        android:id="@+id/radio3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radio10"
+        android:layout_alignBottom="@+id/radio10"
+        android:layout_alignRight="@+id/radio0"
+        android:text="CP"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radio4"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:text="Upload pic" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/TextView01"
+        android:clickable="true"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

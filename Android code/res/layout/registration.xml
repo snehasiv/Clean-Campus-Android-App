@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.SEPM.Login" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText6"
+        android:layout_alignLeft="@+id/editText6"
+        android:layout_alignRight="@+id/editText6"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Passowrd"
+        android:inputType="textPassword" />
+
+    <RadioGroup
+        android1:id="@+id/radioGroup1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_above="@+id/editText5"
+        android1:layout_alignLeft="@+id/editText5"
+        android1:layout_marginBottom="27dp" >
+
+        <RadioButton
+            android1:id="@+id/radio0"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:checked="true"
+            android1:text="Student" />
+
+        <RadioButton
+            android1:id="@+id/radio1"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Faculty" />
+
+        <RadioButton
+            android1:id="@+id/radio2"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Staff/Others" />
+    </RadioGroup>
+
+</RelativeLayout>
